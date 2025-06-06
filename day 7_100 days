@@ -1,6 +1,6 @@
 print("If you're okay with it, would you like to have dinner with me?")
 food = input("What is your favorite food? ")
-if food == "stake":
+if food == "steak":
     print("That is my favorite food too!")
     if food == "pizza":
       print("I like pizza too!")
