@@ -75,7 +75,7 @@ while True:
             while True:
                 type = input("Character Type (Human, Elf, Wizard, Orc): ")
                 print("")
-                if type == "human":
+                if type == "human" or type == "Human":
                     print(P1)
                     print(type)
                     P1_Health = human_health()
@@ -86,7 +86,7 @@ while True:
                     print("Magic: ", P1_Magic)
                     print("May your name go down in legend...")
                     break
-                elif type == "elf":
+                elif type == "elf" or type == "Elf":
                     print(P1)
                     print(type)
                     P1_Health = elf_health()
@@ -97,7 +97,7 @@ while True:
                     print("Magic: ", P1_Magic)
                     print("May your name go down in legend...")
                     break
-                elif type == "wizard":
+                elif type == "wizard" or type == "Wizard":
                     print(P1)
                     print(type)
                     P1_Health = wizard_health()
@@ -108,7 +108,7 @@ while True:
                     print("Magic: ", P1_Magic)
                     print("May your name go down in legend...")
                     break
-                elif type == "orc":
+                elif type == "orc" or type == "Orc":
                     print(P1)
                     print(type)
                     P1_Health = orc_health()
@@ -140,7 +140,7 @@ while True:
             while True:
                 type = input("Character Type (Human, Elf, Wizard, Orc): ")
                 print("")
-                if type == "human":
+                if type == "human" or type == "Human":
                     print(P2)
                     print(type)
                     P2_Health = human_health()
@@ -151,7 +151,7 @@ while True:
                     print("Magic: ", P2_Magic)
                     print("May your name go down in legend...")
                     break
-                elif type == "elf":
+                elif type == "elf" or type == "Elf":
                     print(P2)
                     print(type)
                     P2_Health = elf_health()
@@ -162,7 +162,7 @@ while True:
                     print("Magic: ", P2_Magic)
                     print("May your name go down in legend...")
                     break
-                elif type == "wizard":
+                elif type == "wizard" or type == "Wizard":
                     print(P2)
                     print(type)
                     P2_Health = wizard_health()
@@ -173,7 +173,7 @@ while True:
                     print("Magic: ", P2_Magic)
                     print("May your name go down in legend...")
                     break
-                elif type == "orc":
+                elif type == "orc" or type == "Orc":
                     print(P2)
                     print(type)
                     P2_Health = orc_health()
