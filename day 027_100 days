@@ -5,7 +5,7 @@ import os
 print("Welcome to the game!")
 
 while True:
-  start = input("Press 's' to start the game: ")
+  start = input("Press 's' to start or 'x' to exit: ")
   if start == "s":
     print("Game started")
     print("loading...")
@@ -21,7 +21,7 @@ while True:
         if create == "c":
             print("Character Builder")
             name = input("Name Your Legend: ")
-        
+
             while True:
                 type = input("Character Type (Human, Elf, Wizard, Orc): ")
                 print("")
@@ -30,7 +30,7 @@ while True:
                     print(type)
                     print("Health: ", int(sides6_dice * sides12_dice / 2 + 10))
                     print("Strength: ", int(sides6_dice * sides12_dice / 2 + 12))
-                    print("Magic: ", int(sides6_dice * sides12_dice / 2 - 10))
+                    print("Magic: ", max(0, int(sides6_dice * sides12_dice / 2 - 3)))
                     print("May your name go down in legend...")
                     break
                 elif type == "elf":
@@ -44,7 +44,7 @@ while True:
                 elif type == "wizard":
                     print(name)
                     print(type)
-                    print("Health: ", int(sides6_dice * sides12_dice / 2 - 10))
+                    print("Health: ", max(5,int(sides6_dice * sides12_dice / 2 - 3)))
                     print("Strength: ", int(sides6_dice * sides12_dice / 2 + 5))
                     print("Magic: ", int(sides6_dice * sides12_dice / 2 + 15))
                     print("May your name go down in legend...")
@@ -54,20 +54,22 @@ while True:
                     print(type)
                     print("Health: ", int(sides6_dice * sides12_dice / 2 + 15))
                     print("Strength: ", int(sides6_dice * sides12_dice / 2 + 20))  
-                    print("Magic: ", int(sides6_dice * sides12_dice / 2 - 15))
+                    print("Magic: ", int(sides6_dice * sides12_dice / 2 - 8))
                     print("May your name go down in legend...")
                     break
                 else:
                     print("Please choose a valid Character Type")
                     time.sleep(1)
-                    continue     
+                    continue    
+
+        again = input("Press 'a' to play again: ")
+        if again == "a":
+            continue
+        else:
+            print("Thank you for playing!")
         break
-    again = input("Press 'a' to play again: ")
-    if again == "a":
-        continue
-    else:
-        print("Thank you for playing!")
-        break
+    break
+    
   elif start == "x":
     print("Thank you for playing!")
     break
