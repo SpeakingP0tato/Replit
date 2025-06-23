@@ -61,7 +61,18 @@ while True:
                     print("Please choose a valid Character Type")
                     time.sleep(1)
                     continue    
-
+        else:
+            cancle = input("Press 'x' to exit or 'r' retry create charactor: ")
+            if cancle == "r":
+                continue
+            elif cancle == "x":
+                print("Thank you for playing!")
+                break
+            else:
+                print("Please choose a valid option")
+                continue
+                
+        time.sleep(1)
         again = input("Press 'a' to play again: ")
         if again == "a":
             continue
